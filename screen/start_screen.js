@@ -1,13 +1,10 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { TouchableOpacity, StyleSheet, Text, View, Image } from "react-native";
 
 import Colors from "../constants/color";
 import text from "../constants/text";
-import SignUp from "./sign_up";
-import router from '../navigation/router';
 
-const StartScreen = props => {
-  
+export default function StartScreen(props) {
   return (
     <View style={styles.Main}>
       <View style={styles.Image}>
@@ -17,31 +14,30 @@ const StartScreen = props => {
         <View style={styles.children}>
           <Text style={text.normal}>New Account?{"  "}</Text>
 
-          <Text
-            style={styles.textDefault}
+          <TouchableOpacity
             onPress={() => {
-              console.log('Sign Up')
+              props.navigation.navigate("SignUp");
+              console.log("Sign Up");
             }}
           >
-            Sign Up
-          </Text>
+            <Text style={styles.textDefault}>Sign Up</Text>
+          </TouchableOpacity>
         </View>
-        <View style={styles.children}>
+        <View style={{...styles.children, paddingBottom: '4%'}}>
           <Text style={text.normal}>Old Account?{"  "}</Text>
 
-          <Text
-            style={styles.textDefault}
+          <TouchableOpacity
             onPress={() => {
-              console.log("Log in");
+              props.navigation.navigate("Login");
             }}
           >
-            Log in
-          </Text>
+            <Text style={styles.textDefault}>Log in</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   Heading: {
@@ -56,8 +52,7 @@ const styles = StyleSheet.create({
   logo: {
     width: "100%",
     height: "100%",
-    borderColor: "black",
-    resizeMode: "center"
+    borderColor: "black"
   },
 
   Main: {
@@ -71,7 +66,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    paddingBottom: "2%"
   },
   childrenContainer: {
     flex: 1,
@@ -79,7 +73,10 @@ const styles = StyleSheet.create({
     alignContent: "center"
   },
   Image: { flex: 2, alignItems: "center", justifyContent: "center" },
-  textDefault: {...text.normal, color: "blue", textDecorationLine: "underline"}
+  textDefault: {
+    ...text.normal,
+    color:Colors.hyperlink, 
+    textDecorationLine: "underline",
+    fontWeight: 'bold'
+  }
 });
-
-export default StartScreen;

@@ -1,0 +1,72 @@
+{
+  "decisions": {
+    "786|00unidentified>@react-native-community/cli>metro>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043928,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro-config>metro>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043928,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro>metro-cache>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043928,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro-config>metro>metro-cache>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043929,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro>metro-config>metro-cache>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043929,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro-config>metro-cache>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043929,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro>metro-config>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043929,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro-config>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043929,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043929,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro-config>metro>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043929,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    },
+    "786|00unidentified>@react-native-community/cli>metro-core>jest-haste-map>micromatch>braces": {
+      "decision": "none",
+      "madeAt": 1573815043929,
+      "reason": "package was removed",
+      "expiresAt": 1575024604682
+    }
+  },
+  "rules": {},
+  "version": 1
+}

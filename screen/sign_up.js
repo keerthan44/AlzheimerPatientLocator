@@ -4,27 +4,15 @@ import { StyleSheet, Text, View, TextInput } from "react-native";
 import Colors from "../constants/color";
 import text from "../constants/text";
 
-const SignUp = props => {
+export default function SignUp (){
   return (
     <View style={styles.Main}>
       <View style={{ alignItems: "center", height: "10%" }}>
-        <Text style={{...text.Heading, text}}>Sign Up Page</Text>
+        <Text style={{...text.Heading}}>Sign Up Page</Text>
       </View>
       <View style={{ height: "8%" }}>
         <View style={{ flexDirection: "row" }}>
           <Text style={{...text.normal, fontWeight: 'bold'}}>{"   "}Username:{"   "} </Text>
-          <TextInput style={styles.input}/>
-        </View>
-      </View>
-      <View style={{ height: "8%" }}>
-        <View style={{ flexDirection: "row" }}>
-          <Text style={text.normal}>{"   "}Username:{"   "} </Text>
-          <TextInput style={styles.input}/>
-        </View>
-      </View>
-      <View style={{ height: "8%" }}>
-        <View style={{ flexDirection: "row" }}>
-          <Text style={text.normal}>{"   "}Username:{"   "} </Text>
           <TextInput style={styles.input}/>
         </View>
       </View>
@@ -47,5 +35,3 @@ const styles = StyleSheet.create({
   },
 
 });
-
-export default SignUp;
